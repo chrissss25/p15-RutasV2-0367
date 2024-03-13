@@ -12,14 +12,18 @@ class Pantalla2_0367 extends StatelessWidget {
         backgroundColor: Color(0xffff4107),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {},
-              child: Text("Pantalla"),
-            )
-          ],
+        child: Container(
+          color: Color(0xffff9c9c),
+          constraints: BoxConstraints(
+            minHeight: 100,
+            minWidth: 200,
+            maxHeight: 300,
+            maxWidth: 300,
+          ),
+          child: Text(
+            'Christian Heredia 0367',
+            style: TextStyle(fontSize: 30),
+          ),
         ),
       ),
     );

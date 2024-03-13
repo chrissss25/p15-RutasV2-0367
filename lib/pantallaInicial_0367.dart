@@ -8,7 +8,7 @@ class PantallaInicial_0367 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pantalla Inicial Heredia0367"),
+        title: Text("card container Heredia0367"),
         backgroundColor: Colors.amber,
       ),
       body: Center(
@@ -19,13 +19,21 @@ class PantallaInicial_0367 extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, "/Pantalla1_0367");
               },
-              child: Text("movver a pantalla 1"),
+              child: Text("mover a pantalla 1"),
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/Pantalla2_0367");
               },
-              child: Text("movver a pantalla 2"),
+              style: ElevatedButton.styleFrom(primary: Colors.red),
+              child: Text("mover a pantalla 2"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/Pantalla3_0367");
+              },
+              style: ElevatedButton.styleFrom(primary: Colors.cyan),
+              child: Text("mover a pantalla 3"),
             )
           ], //ninos widgets
         ),
